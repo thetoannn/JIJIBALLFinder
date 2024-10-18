@@ -116,7 +116,7 @@ const DetailedFilterComponent = ({ setFilteredResults, allCourts }) => {
 
   return (
     <div className="detailed-filter">
-      <Form>
+      <Form className='form-detail-filter'>
         <Row className="g-2">
           <Col xs="auto" className="me-1">
             <Form.Group controlId="formLocation">
