@@ -1,0 +1,335 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "minhtri",
+            "email": "minhtri@gmail.com",
+            "password": "123456",
+            "role": "coaches",
+            "profile": {
+                "name": "Minh Trí",
+                "location": "Ha Nội",
+                "skill_level": "intermediate",
+                "bio": "I love playing pickleball.",
+                "phone_number": "1234567890",
+                "avatar": "/assets/images/user1.png",
+                "availability": []
+            }
+        },
+        {
+            "id": 2,
+            "username": "coach1",
+            "email": "coach1@example.com",
+            "password": "hashed_password2",
+            "role": "coach",
+            "profile": {
+                "name": "Coach One",
+                "location": "Los Angeles",
+                "bio": "Experienced pickleball coach.",
+                "phone_number": "9876543210",
+                "availability": [
+                    {
+                        "day": "Tuesday",
+                        "time_slots": [
+                            "10:00 - 12:00",
+                            "14:00 - 16:00"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "username": "courtowner1",
+            "email": "courtowner1@example.com",
+            "password": "hashed_password3",
+            "role": "court_owner",
+            "profile": {
+                "name": "Court Owner One",
+                "location": "Chicago",
+                "phone_number": "5555555555"
+            }
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "court_id": 1,
+            "post_type": "find_player",
+            "skill_level": "intermediate",
+            "time": "2024-09-30T10:00:00Z",
+            "status": "open",
+            "applicants": [
+                {
+                    "user_id": 2,
+                    "status": "pending"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "court_id": 2,
+            "post_type": "find_partner",
+            "skill_level": "advanced",
+            "time": "2024-10-01T15:00:00Z",
+            "status": "open",
+            "applicants": [
+                {
+                    "user_id": 1,
+                    "status": "pending"
+                }
+            ]
+        }
+    ],
+    "courts": [
+        {
+            "id": 1,
+            "name": "Sân Pickleball 286 Nguyễn Xiển",
+            "price": "100.000",
+            "slots": 6,
+            "location": "286 Nguyễn Xiển",
+            "type": "không có mái che",
+            "level": 2.0,
+            "image": "/assets/images/court1.png"
+        },
+        {
+            "id": 2,
+            "name": "Sân Pickleball 286 Nguyễn Xiển",
+            "price": "100.000",
+            "slots": 7,
+            "location": "286 Nguyễn Xiển",
+            "type": "có mái che",
+            "level": 2.5,
+            "image": "/assets/images/court2.png"
+        },
+        {
+            "id": 3,
+            "name": "Sân Pickleball 286 Nguyễn Xiển",
+            "price": "120.000",
+            "slots": 2,
+            "location": "286 Nguyễn Xiển",
+            "type": "không có mái che",
+            "level": 3.0,
+            "image": "/assets/images/court3.png"
+        },
+        {
+            "id": 4,
+            "name": "Sân Pickleball 286 Nguyễn Xiển",
+            "price": "100.000",
+            "slots": 0,
+            "location": "286 Nguyễn Xiển",
+            "type": "có mái che",
+            "level": 4.0,
+            "image": "/assets/images/court4.png"
+        }
+    ],
+    "coaches": [
+        {
+            "name": "Minh Trí",
+            "price": "100.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "0123456789",
+            "image": "/assets/images/coach1.png"
+        },
+        {
+            "name": "Thái Sơn",
+            "price": "150.000",
+            "level": "5",
+            "contact": "Zalo",
+            "phone": "0756456789",
+            "image": "/assets/images/coach2.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach3.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach4.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach1.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach2.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach3.png"
+        },
+        {
+            "name": "Nguyễn Văn Anh",
+            "price": "120.000",
+            "level": "5.0",
+            "contact": "Facebook",
+            "phone": "0987654321",
+            "image": "/assets/images/coach4.png"
+        },
+        {
+            "name": "Phạm Thành Sơn",
+            "price": "180.000",
+            "level": "5.8",
+            "contact": "Facebook",
+            "phone": "0912345678",
+            "image": "/assets/images/coach2.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach2.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach2.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach2.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach2.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach2.png"
+        },
+        {
+            "name": "Minh Quân",
+            "price": "150.000",
+            "level": "5.5",
+            "contact": "Facebook",
+            "phone": "034256789",
+            "image": "/assets/images/coach2.png"
+        }
+    ],
+    "bookings": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "court_id": 1,
+            "time_slot": {
+                "day": "Monday",
+                "start_time": "2024-09-30T10:00:00Z",
+                "end_time": "2024-09-30T12:00:00Z"
+            },
+            "status": "confirmed",
+            "created_at": "2024-09-29T00:00:00Z",
+            "updated_at": "2024-09-29T00:00:00Z"
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "court_id": 2,
+            "time_slot": {
+                "day": "Wednesday",
+                "start_time": "2024-10-02T08:00:00Z",
+                "end_time": "2024-10-02T10:00:00Z"
+            },
+            "status": "pending",
+            "created_at": "2024-09-29T00:00:00Z",
+            "updated_at": "2024-09-29T00:00:00Z"
+        }
+    ],
+    "messages": [
+        {
+            "id": 1,
+            "from_user_id": 1,
+            "to_user_id": 2,
+            "content": "Hi, would you like to play?",
+            "created_at": "2024-09-29T00:00:00Z"
+        },
+        {
+            "id": 2,
+            "from_user_id": 2,
+            "to_user_id": 1,
+            "content": "Sure! Let's schedule.",
+            "created_at": "2024-09-29T00:00:00Z"
+        }
+    ],
+    "notifications": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "message": "Your booking has been confirmed.",
+            "read": false,
+            "created_at": "2024-09-29T00:00:00Z"
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "message": "New partner available for your post.",
+            "read": false,
+            "created_at": "2024-09-29T00:00:00Z"
+        }
+    ],
+    "news": [
+        [
+            {
+              "id": 1,
+              "title": "Review sân Pickleball tại đường 286 Nguyễn Xiển xem thực hư...",
+              "date": "03 tháng 08 năm 2024",
+              "imageUrl": "path/to/image1.png",
+              "description": "Sân chơi Pickleball Nguyễn Xiển...."
+            },
+            {
+              "id": 2,
+              "title": "Review sân Pickleball tại đường 286 Nguyễn Xiển xem thực hư...",
+              "date": "03 tháng 08 năm 2024",
+              "imageUrl": "path/to/image2.png",
+              "description": "Sân chơi Pickleball Nguyễn Xiển...."
+            },
+            {
+              "id": 3,
+              "title": "Review sân Pickleball tại đường 286 Nguyễn Xiển xem thực hư...",
+              "date": "03 tháng 08 năm 2024",
+              "imageUrl": "path/to/image3.png",
+              "description": "Sân chơi Pickleball Nguyễn Xiển...."
+            }
+          ]
+    ]
+}

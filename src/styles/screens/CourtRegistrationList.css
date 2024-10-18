@@ -1,0 +1,73 @@
+.court-registration-list {
+  padding: 10px;
+}
+
+.scrollable-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.court-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.court-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#court-details {
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+#court-details h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+#court-details h6 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#court-details p {
+  margin: 3px 0;
+}
+
+.court-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.court-actions button {
+  margin-bottom: 5px;
+}
+
+.completed-btn {
+  color: white;
+  background-color: #00b894;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.cancel-btn {
+  color: white;
+  background-color: #d63031;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}

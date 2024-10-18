@@ -1,0 +1,39 @@
+.coach-list {
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.coach-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 370px; /* Chiều cao tối đa cho vùng hiển thị */
+    overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung vượt quá chiều cao tối đa */
+}
+
+.coach-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.coach-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 15%;
+    object-fit: cover;
+}
+
+.coach-details {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.coach-actions {
+    display: flex;
+    align-items: center;
+}

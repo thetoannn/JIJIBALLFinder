@@ -1,0 +1,64 @@
+.post-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  .post-items {
+    /* Chỉ hiển thị tối đa 3 thẻ, phần còn lại sẽ bị ẩn và cần cuộn để xem */
+    max-height: 360px; /* Giới hạn chiều cao để hiển thị 3 thẻ */
+    overflow-y: auto; /* Tạo thanh cuộn dọc */
+    padding-right: 15px;
+    border-radius: 10px;
+  }
+
+  .post-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Đường viền chính mỏng */
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05); /* Hiệu ứng đổ bóng nhạt dần ra ngoài */
+    border-radius: 10px; /* Tuỳ chọn bo góc, nếu cần */
+  }
+  .post-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
+  .post-details {
+    flex-grow: 1;
+  }
+
+  .post-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Style thanh cuộn */
+  .scrollable-list {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #007bff #e0e0e0; /* Màu cho thanh cuộn */
+  }
+  
+  /* Style thanh cuộn cho Chrome, Edge, Safari */
+  .scrollable-list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollable-list::-webkit-scrollbar-track {
+    background: #e0e0e0;
+  }
+  
+  .scrollable-list::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+  }
+
+  .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }

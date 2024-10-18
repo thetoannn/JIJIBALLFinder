@@ -1,0 +1,62 @@
+.post-back {
+  position: relative;
+  background: url(../../assets/post-background.png);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.post-back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Màu đen với độ trong suốt 60% */
+  z-index: -1; /* Đặt lớp phủ phía sau nội dung */
+}
+
+.card {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+#card-1 {
+  margin: 40px 20px 0 23%;
+  padding-bottom: 21.5%;
+}
+
+#card-2 {
+  margin: 40px 23% 0 20px;
+}
+
+.post-form-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  background-color: #2d70a1;
+  color: #ffffff;
+  width: 8%;
+  height: 30px;
+  font-weight: 600;
+}
+
+#btn-post-1 {
+  background-color: #ffffff;
+  color: #2d70a1;
+}
+
+.custom-label {
+  color: #ffffff;
+}
+
+.form-actions {
+  padding-bottom: 50px;
+}
+
+#post-card-title {
+  text-align: center;
+}

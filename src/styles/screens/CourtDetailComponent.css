@@ -1,0 +1,252 @@
+/* CourtDetailComponent.css */
+
+.court-detail-container {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.court-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#court-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#court-detail-card {
+  border-radius: 12px;
+  border: none;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+#court-detail-card .large-image {
+  border-radius: 12px;
+  width: 100%;
+  height: 393px;
+  object-fit: contain; 
+}
+
+#court-detail-card .small-image {
+  border-radius: 8px;
+  width: 100%; 
+  height: 107px; 
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Màu chữ */
+  font-size: 24px;
+  opacity: 0; /* Bắt đầu ẩn */
+  transition: opacity 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+.small-image-container {
+  position: relative; /* Để overlay nằm trên hình ảnh */
+}
+
+.small-image-container:hover .overlay {
+  opacity: 1; /* Hiện overlay khi di chuột qua */
+}
+
+.small-image-col {
+  flex: 1 0 25%; /* Đảm bảo mỗi ảnh nhỏ chiếm 25% chiều rộng của hàng */
+  max-width: 154px; /* Chiều rộng tối đa cho ảnh nhỏ */
+  padding: 5px; /* Thêm một chút padding để các ảnh không bị sát nhau */
+}
+
+.view-more-btn {
+  width: 100%; /* Đảm bảo nút xem thêm chiếm toàn bộ chiều rộng của ô */
+}
+
+.image-grid {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-grid img {
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của container */
+  height: auto; /* Giữ tỷ lệ ảnh */
+}
+
+.image-gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.gallery-thumbnail {
+  width: 80px;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.court-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.badge-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.court-badge {
+  font-size: 14px;
+  border-radius: 30px;
+  padding: 5px 10px;
+  border: 1px solid #2d70a1;
+  color: #2d70a1;
+}
+
+.court-details h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.court-info {
+  display: flex; /* Đặt flexbox cho phần chứa cả hai thông tin */
+  align-items: center; /* Căn chỉnh các mục theo trục dọc */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+  padding-bottom: 20px;
+}
+
+.court-info-item {
+  display: flex; /* Đặt flexbox cho từng mục */
+  align-items: center; /* Căn giữa icon với text */
+}
+
+.icon {
+  margin-right: 8px;
+  color: #999;
+  vertical-align: middle;
+}
+
+.price-text {
+  color: #059a8f;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.slot-selection {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.slot-selection button {
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.register-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 0;
+  background-color: #2d70a1;
+  border-color: #2d70a1;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-text {
+  text-align: left;
+  padding: 10px 0;
+}
+
+.text-location {
+}
+
+.des-text-2 {
+  display: none;
+}
+
+/* Điều chỉnh hình ảnh cho màn hình nhỏ */
+@media (max-width: 768px) {
+  #court-detail-card .large-image {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của container */
+    height: auto; /* Giữ tỉ lệ ảnh */
+  }
+
+  #court-detail-card {
+    padding: 15px; /* Điều chỉnh padding để phù hợp với màn hình nhỏ hơn */
+  }
+
+  .small-image-col {
+    flex: 1 0 33%; /* Mỗi ảnh chiếm 33% chiều rộng trên màn hình nhỏ */
+    max-width: 33%; /* Chiều rộng tối đa cho ảnh nhỏ */
+  }
+
+  .image-grid {
+    flex-wrap: nowrap; /* Giữ cho các hình ảnh luôn nằm ngang */
+    overflow-x: auto; /* Thêm thanh cuộn ngang nếu cần */
+  }
+}
+
+@media (max-width: 430px) {
+  #court-detail-card {
+    padding: 10px;
+  }
+
+  #court-detail-card .large-image {
+    width: 100%; /* Đảm bảo ảnh hiển thị tốt trên thiết bị nhỏ */
+    height: auto;
+  }
+
+  #court-detail-card .small-image {
+    width: 60%;
+    height: auto;
+  }
+
+  .small-image-col {
+    flex: 1 0 50%; /* Mỗi ảnh chiếm 50% chiều rộng trên màn hình rất nhỏ */
+    max-width: 33.3%; /* Chiều rộng tối đa cho ảnh nhỏ */
+    padding: 0;
+  }
+
+  .image-grid {
+    flex-direction: row;
+  }
+
+  .des-text-2 {
+    display: block;
+  }
+
+  .des-text-1 {
+    display: none;
+  }
+
+  .court-description {
+    padding: 15px 0;
+  }
+}

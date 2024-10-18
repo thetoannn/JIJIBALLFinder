@@ -1,0 +1,23 @@
+.categories-sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 390px;
+    margin-right: 20px;
+    padding-left: 0px;
+  }
+  .categories-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .categories-sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 17px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  .categories-sidebar li.active {
+    background-color: #C3D7FF;
+    color: #2D70A1;
+  }

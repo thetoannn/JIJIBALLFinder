@@ -1,0 +1,16 @@
+.news-detail {
+    margin: 40px;
+    text-align: center;
+  }
+  
+  .news-detail-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  .news-detail h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  

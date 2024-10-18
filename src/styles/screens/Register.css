@@ -1,0 +1,120 @@
+.register-container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #dee2e6;
+}
+
+.form-wrapper {
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+  padding: 30px;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.btn:hover {
+  background-color: grey;
+  color: white;
+}
+
+.btn:hover .fa-icon {
+  color: white;
+}
+
+.form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  color: #777;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.button {
+  padding: 0.75rem;
+  background-color: white;
+  color: #008f72;
+  border: 1px solid #008f72;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #008f72;
+  color: white;
+}
+
+.link-wrapper {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.link {
+  color: #008f72;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #0056b3;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box !important;
+}

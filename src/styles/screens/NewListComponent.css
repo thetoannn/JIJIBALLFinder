@@ -1,0 +1,58 @@
+.news-list {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto; /* Cho phép cuộn ngang */
+  gap: 10px; /* Khoảng cách giữa các thẻ */
+  padding: 0 10px; /* Khoảng cách lề */
+  scroll-padding-left: 10px; /* Thêm khoảng cách bên trái khi cuộn */
+  -webkit-overflow-scrolling: touch; /* Cho phép cuộn mượt trên iOS */
+  justify-content: center;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: nowrap; /* Không cho phép các phần tử xuống dòng */
+  gap: 10px; 
+}
+
+.news-card {
+  flex: 0 0 auto; /* Giữ kích thước cố định */
+  width: 280px; /* Đảm bảo mỗi thẻ tin tức có kích thước cố định */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-right: 10px; /* Khoảng cách giữa các thẻ */
+}
+
+.news-card:hover {
+  transform: scale(1.05);
+}
+
+.news-image {
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.news-info {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Responsive design cho màn hình nhỏ */
+@media (max-width: 430px) {
+  .news-list {
+    justify-content: flex-start;
+  }
+  
+  .news-card {
+    width: 220px; /* Giảm kích thước thẻ tin tức trên màn hình nhỏ */
+  }
+
+  .news-image {
+    height: 140px;
+  }
+}

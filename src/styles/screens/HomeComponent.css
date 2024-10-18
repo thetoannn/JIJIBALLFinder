@@ -1,0 +1,39 @@
+.home-component {
+  display: flex;
+  color: #f0f0f0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 55vh;
+  background-color: #f0f0f0;
+  /* background-image: url("../../../public/assets/images/slide.png"); */
+  background-size: cover;
+  background-position: center;
+}
+
+.home-component p {
+    color: #f0f0f0;
+}
+
+.home-component.coach-home {
+  height: 60vh;
+}
+
+.custom-carousel {
+  width: 100%;   /* Chiều rộng 100% */
+  height: 55vh;  /* Chiều cao 55% của viewport height */
+  overflow: hidden;
+}
+
+.custom-carousel img {
+  width: 100%;
+  height: 100%; /* Đảm bảo hình ảnh chiếm hết chiều cao carousel */
+  object-fit: contain; /* Giữ tỷ lệ hình ảnh nhưng cắt những phần không phù hợp */
+}
+
+
+@media (max-width: 430px) {
+    .home-component {
+        height: 30vh;
+    }
+}

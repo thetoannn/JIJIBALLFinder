@@ -1,0 +1,20 @@
+.court-list-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #body-court {
+    margin: 0 10%;
+  }
+
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }

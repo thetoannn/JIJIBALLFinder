@@ -1,0 +1,126 @@
+.court-card:hover {
+  transform: scale(1.05);
+}
+
+.coach-list-row {
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.coach-card {
+  position: relative;
+  overflow: hidden;
+  width: 16rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  padding: 0;
+  margin: 0;
+}
+
+.card-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 170px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.top-left-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  border: 1px solid #000000;
+}
+
+.zalo-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  z-index: 2;
+  background-color: #ffffff;
+  border: none;
+  color: #007bff;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+#price-text {
+  color: #059A8F;
+  font-weight: 540;
+  font-size: 19px;
+  padding-top: 10px;
+}
+
+.contact-buttons .contact-btn {
+  width: 95%;
+  border-radius: 30px;
+}
+
+.contact-buttons {
+  margin-top: 10px;
+  margin-right: 0px;
+}
+
+.card-body {
+  margin: 15px;
+  padding: 0px;
+}
+
+.card-body .card-title {
+  text-align: left;
+  font-weight: bold;
+  margin: 0px;
+  overflow: hidden; /* Ẩn nội dung thừa */
+  text-overflow: ellipsis; /* Hiển thị ... nếu tên quá dài */
+}
+
+.card-body .card-text {
+  margin: 0;
+}
+
+@media (max-width: 430px) {
+  .coach-list-row {
+    display: flex;
+    flex-wrap: nowrap; /* Không cho phép các phần tử xuống dòng */
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    -webkit-overflow-scrolling: touch; /* Mượt mà hơn trên iOS */
+    padding: 10px;
+    gap: 10px; /* Khoảng cách giữa các thẻ */
+    scroll-padding-left: 10px; /* Tạo khoảng trống ở đầu cuộn */
+    justify-content: flex-start;
+  }
+
+  .coach-card {
+    flex: 0 0 auto; /* Giữ kích thước của thẻ, không cho phép nó co giãn */
+    width: 250px; /* Kích thước cố định của từng thẻ */
+    margin-right: 10px;
+  }
+
+  .card-image {
+    height: 150px; /* Điều chỉnh chiều cao ảnh */
+  }
+
+  .card-body {
+    margin: 10px; /* Khoảng cách bên trong card */
+  }
+
+  .price-text,
+  .card-title {
+    font-size: 14px; /* Điều chỉnh kích thước chữ cho phù hợp màn hình nhỏ */
+  }
+}

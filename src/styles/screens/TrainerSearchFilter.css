@@ -1,0 +1,33 @@
+.filter-container {
+    background-color: #F0F0F0;
+    /* Light background color */
+    border-radius: 20px;
+    /* Rounded corners for the container */
+    padding: 1rem;
+    /* Padding around the container */
+    margin-left: 18rem;
+    margin-right: 18rem;
+}
+
+.form-control,
+.form-select {
+    border-radius: 50px;
+    /* Rounded input and select */
+}
+
+.form option {
+    font-size: 14px;
+  }
+
+.btn-search {
+    border-radius: 20px;
+    /* Rounded button */
+    color: white;
+    background-color: #2D70A1;
+    width: 250px;
+}
+
+.btn-link {
+    color: #007bff;
+    /* Match the link color */
+}

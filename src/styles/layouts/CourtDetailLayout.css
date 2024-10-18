@@ -1,0 +1,9 @@
+.main-detail-court {
+  margin: 0 277px;
+}
+
+@media (max-width: 430px) {
+  .main-detail-court {
+    margin: 0 10px;
+  }
+}
