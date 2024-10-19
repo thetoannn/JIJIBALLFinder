@@ -60,4 +60,10 @@
     #filter-web {
         display: none;
     }
+
+    #btn-filter-mobile {
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }

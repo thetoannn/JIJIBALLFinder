@@ -71,4 +71,8 @@
   .detailed-filter input {
     width: auto; /* Đảm bảo chiều rộng tự động */
   }
+
+  #btn-filter-mobile {
+    display: block;
+  }
 }
