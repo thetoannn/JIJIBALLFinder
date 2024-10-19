@@ -17,7 +17,7 @@
 
 .form option {
     font-size: 14px;
-  }
+}
 
 .btn-search {
     border-radius: 20px;
@@ -30,4 +30,26 @@
 .btn-link {
     color: #007bff;
     /* Match the link color */
+}
+
+.detailed-filter .form-control-sm {
+    width: 150px;
+}
+
+/* Media query cho màn hình nhỏ hơn 430px */
+@media (max-width: 430px) {
+    .filter-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .filter-container .form-control,
+    .filter-container .form-select {
+        width: 100%; /* Chiều rộng 100% cho các trường */
+    }
+    
+    /* Giới hạn số dòng hiển thị */
+    .filter-container .row {
+        flex-direction: column; /* Sắp xếp các trường theo cột */
+    }
 }

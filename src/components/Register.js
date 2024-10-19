@@ -101,8 +101,8 @@ const Register = () => {
             alt="Register"
             className="image w-100 h-100" />
         </div>
-        <div className='wrapper w-50 h-100'>
-          <button className="btn border" style={{ position: "absolute", top: "14%", left: "53.5%" }} onClick={handleBackButton}>
+        <div className='wrapper h-100'>
+          <button className="btn border button-back" onClick={handleBackButton}>
             <FaArrowLeft className='fa-icon' />
           </button>
           <div className="form w-80">

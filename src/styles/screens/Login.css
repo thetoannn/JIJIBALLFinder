@@ -204,3 +204,18 @@
     margin: 0;
   }
   
+  @media (max-width: 431px) {
+    .form-wrapper {
+      width: 90%;
+      flex-direction: column;
+    }
+    
+    .form {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    .image {
+      display: none; /* Hide the image on mobile */
+    }
+  }

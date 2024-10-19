@@ -51,7 +51,7 @@
 
 .detailed-filter .row {
   display: flex;
-  flex-wrap: nowrap; /* Ngăn không cho các thành phần xuống dòng */
+  /* flex-wrap: nowrap; */
   align-items: center;
   justify-content: flex-start;
 }
