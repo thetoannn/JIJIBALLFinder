@@ -2,11 +2,35 @@ import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import '../styles/screens/CourtRegistrationList.css'; // Import your custom styles
 import { FaFacebook, FaPhone } from 'react-icons/fa6';
+import { useNavigate } from 'react-router-dom';
 
 const CourtRegistrationList = () => {
   const [courts, setCourts] = useState([]);  // Store list of courts
   const [loading, setLoading] = useState(true);  // Loading state
   const [error, setError] = useState(null);  // Error state
+  const navigate = useNavigate();
+
+  const handleCardClick = (court) => {
+    navigate('/court/court-detail', {
+      state: {
+        name: court.court_name,
+        price: court.cost,
+        slots: court.total_players,
+        location: court.location,
+        type: court.court_type,
+        level: court.skill_level,
+        images: court.images,
+        applied_players: court.players_needed,
+        players_needed: court.players_needed,
+        time: court.play_time,
+        contact_info: court.contact_info,
+        applied_count: court.applied_players_count,
+        idCourt: court.id,
+        date: court.play_date
+      }
+    });
+  }
+
 
   // Function to fetch registered courts
   const fetchCourts = async () => {
@@ -32,6 +56,9 @@ const CourtRegistrationList = () => {
   
       const data = await response.json();
       setCourts(data);
+      console.log(courts);
+      
+      
     } catch (error) {
       setError('Có lỗi xảy ra khi tải danh sách sân.');
     } finally {
@@ -116,7 +143,7 @@ const CourtRegistrationList = () => {
 
       <div className="court-items scrollable-list">
         {courts.map((court) => (
-          <div key={court._id} className="court-item">
+          <div key={court._id} className="court-item" onClick={() => handleCardClick(court)}>
             <img
               src={court.images[0] || '/assets/images/default-court.png'}
               alt={court.court_name}
