@@ -77,7 +77,7 @@ const Header = () => {
       <span className="menu-toggle" onClick={toggleMenu}>&#9776;</span>
       <ul className={`nav-links ${menuOpen ? 'show' : ''}`}>
         <li><a href="/">Trang chủ</a></li>
-        <li><a href="https://jijiball-shop-pickleball.netlify.app/" target="_blank" rel="noopener noreferrer">Cửa Hàng</a></li>
+        <li><a href="https://shop.jijiball.com" target="_blank" rel="noopener noreferrer">Cửa Hàng</a></li>
         <li><a href="/court">Giao lưu</a></li>
         <li><a href="/coach">Huấn luyện viên</a></li>
       </ul>
