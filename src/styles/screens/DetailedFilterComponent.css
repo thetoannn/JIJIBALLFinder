@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: nowrap; /* Ngăn các phần tử xuống dòng */
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   white-space: nowrap;
   overflow-x: auto; /* Cho phép cuộn ngang */
 }
