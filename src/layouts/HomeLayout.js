@@ -61,6 +61,7 @@ const HomeLayout = () => {
                 textDecoration: 'none',
                 color: "#828282",
                 marginTop: "20px",
+                marginBottom: "20px",
                 display: window.innerWidth <= 430 ? 'none' : 'block' // Kiểm tra kích thước màn hình
               }}
             >

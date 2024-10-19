@@ -56,7 +56,7 @@ const CourtRegistrationList = () => {
   
       const data = await response.json();
       setCourts(data);
-      console.log(courts);
+      console.log(data);
       
       
     } catch (error) {
