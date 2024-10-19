@@ -2,8 +2,9 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 import '../styles/screens/HomeComponent.css';  // Đảm bảo bạn đã tạo file CSS
-import Banner1 from '../assets/banner-HLV.png';
-import Banner2 from '../assets/banner-2.png';
+import Banner1 from '../assets/banner1.png';
+import Banner2 from '../assets/banner2.png';
+import Banner3 from '../assets/bannerHLV.png';
 
 const HomeComponent = () => {
   const location = useLocation();
@@ -25,6 +26,14 @@ const HomeComponent = () => {
             className="d-block w-100"
             src={Banner2}
             alt="Second slide"
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Banner3}
+            alt="Third slide"
           />
         </Carousel.Item>
       </Carousel>

@@ -205,11 +205,11 @@ const CourtDetailComponent = () => {
                 </div>
                 <div className="court-info-item">
                   <FaArrowUpRightDots className="icon" style={{ color: "#828282", fontSize: "20px" }} />
-                  Trình độ: {level ? level.toFixed(1) : '1-2'}
+                  Trình độ: {level ? parseFloat(level).toFixed(1) : '1-2'}
                 </div>
               </Card.Text>
               <Card.Text style={{ fontSize: "24px", fontWeight: "600", color: "#059A8F" }}>
-                {price.toLocaleString('vi-VN')} VND / người
+                {price ? price.toLocaleString('vi-VN') : 'Không có ngày'} VND / người
               </Card.Text>
               <Card.Text>
                 <PiUserSquareLight className="icon" style={{ color: "#828282" }} />Slot đã đặt: <span style={{ color: "red" }}>{slots - players_needed}/{slots} người</span>

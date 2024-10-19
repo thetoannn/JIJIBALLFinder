@@ -38,7 +38,7 @@ const Footer = () => {
                     <FaFacebook />
                   </a>
                   <a
-                    href="https://zalo.me"
+                    href="https://zalo.me/0587503999"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
