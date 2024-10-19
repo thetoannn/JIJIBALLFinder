@@ -32,7 +32,9 @@
     /* Match the link color */
 }
 
-
+#btn-filter-mobile {
+    display: none;
+}
 
 /* Media query cho màn hình nhỏ hơn 430px */
 @media (max-width: 430px) {
@@ -54,4 +56,8 @@
     .detailed-filter .form-control-sm {
     width: 150px;
 }
+
+    #filter-web {
+        display: none;
+    }
 }
