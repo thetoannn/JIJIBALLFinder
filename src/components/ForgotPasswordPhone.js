@@ -23,7 +23,7 @@ const ForgotPasswordPhone = () => {
       if (response.ok) {
         const data = await response.json();
         if (window.confirm(data.message || 'Yêu cầu thành công! Kiểm tra email của bạn.')) {
-          navigate('/login');  // Chuyển đến trang login khi người dùng chọn "OK"
+          navigate('/change-password');  // Chuyển đến trang login khi người dùng chọn "OK"
         }
       } else {
         const errorData = await response.json();
@@ -61,7 +61,7 @@ const ForgotPasswordPhone = () => {
                 required
               />
             </div>
-            <button type="submit" className="button-green">Nhận mật khẩu mới</button>
+            <button type="submit" className="button-green" >Nhận mật khẩu mới</button>
           </form>
         </div>
         <img src={process.env.PUBLIC_URL + '/assets/images/Register.png'} alt="Change Password" className="image" />

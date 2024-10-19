@@ -37,6 +37,7 @@ const ChangePassword = () => {
         // Nếu đổi mật khẩu thành công
         setShowAlert(true);
         setErrorMessage('');
+        navigate('/login');
       } else {
         const data = await response.json();
         setErrorMessage(data.error || 'Có lỗi xảy ra khi đổi mật khẩu');

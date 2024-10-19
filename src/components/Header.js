@@ -146,7 +146,6 @@ const Header = () => {
         <div className={`dropdown-menu ${menuOpen ? 'open' : ''}`}>
           <ul>
             <li><a href="/">Trang chủ</a></li>
-            <li><a href="/about">Giới thiệu</a></li>
             <li><a href="/court">Giao lưu</a></li>
             <li><a href="https://shop.jijiball.com">Cửa hàng</a></li>
             <li><a href="/coach">Huấn luyện viên</a></li>
