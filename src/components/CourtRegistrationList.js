@@ -168,6 +168,7 @@ const CourtRegistrationList = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "#064D7E" }}
+                    onClick={(e) => e.stopPropagation()}
                   >
                     {/* Icon Facebook */}
                     <FaFacebook style={{ color: "#828282", fontSize: "20px", marginRight: "8px" }} />
@@ -177,7 +178,7 @@ const CourtRegistrationList = () => {
                   'Không có Facebook'
                 )}
               <p style={{ color: '#828282' }}>
-                <a style={{ color: '#828282' }} href={court.location}>Vị trí: {court.court_name}</a>
+                <a style={{ color: '#828282' }} href={court.location} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>Vị trí: {court.court_name}</a>
                 - Thời gian chơi: {court.play_time}
               </p>
               <p style={{ color: '#828282' }}>Ngày bắt đầu: {court.play_date}</p>
@@ -187,7 +188,7 @@ const CourtRegistrationList = () => {
               {isPastDate(court.play_date) ? (
                 <Button className="completed-btn" disabled>Đã hoàn thành</Button>
               ) : (
-                <Button className="cancel-btn" onClick={() => handleUnregister(court._id, court.court_name)}>Hủy đăng ký</Button>
+                <Button className="cancel-btn" onClick={(e) => { e.stopPropagation(); handleUnregister(court._id, court.court_name);}}>Hủy đăng ký</Button>
               )}
             </div>
           </div>
