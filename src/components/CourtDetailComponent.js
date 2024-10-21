@@ -281,8 +281,8 @@ const CourtDetailComponent = () => {
             />
             <br />
             <p className='des-text-1'>
-              1. Để xây dựng một cộng đồng Pickleball lớn mạnh, mọi người hãy có trách nhiệm với mỗi bài đăng ký giao lưu của mình <br />
-              2. "Xé vé" là hình thức thu tiền trọn gói cho cả buổi chơi (thường
+              1. Để xây dựng một cộng đồng Pickleball lớn mạnh, mọi người hãy có trách nhiệm với mỗi bài đăng ký giao lưu của mình. <br />
+              2. "Xé vé" là hình thức thu tiền trọn gói cho cả buổi chơi (thường từ
               2-3 giờ) bao gồm: sân + bóng + nước uống (ở hầu hết các sân). <br />
               3. Hình thức xé vé rất phù hợp với những người có công việc bận rộn
               không có nhóm chơi cố định hoặc có thời gian rảnh mà không kiếm
