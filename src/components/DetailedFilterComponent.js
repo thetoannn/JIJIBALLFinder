@@ -177,7 +177,7 @@ const DetailedFilterComponent = ({ setFilteredResults, allCourts }) => {
                   onChange={handleInputChange}
                   className="form-control-sm"
                 >
-                  <option value="">Chọn giờ</option>
+                  <option value="">Chọn giờ chơi</option>
                   {Array.from({ length: 48 }, (_, i) => {
                     const hour = String(Math.floor(i / 2)).padStart(2, '0');
                     const minute = i % 2 === 0 ? '00' : '30';
@@ -202,7 +202,7 @@ const DetailedFilterComponent = ({ setFilteredResults, allCourts }) => {
                 >
                   <option value="">Chọn loại nhóm</option>
                   <option value="Xé Vé">Xé Vé</option>
-                  <option value="Giao Lưu">Giao Lưu</option>
+                  <option value="Giao Lưu">Giao Lưu-CLB</option>
                 </Form.Control>
               </Form.Group>
             </Col>
@@ -302,7 +302,7 @@ const DetailedFilterComponent = ({ setFilteredResults, allCourts }) => {
                   onChange={handleInputChange}
                   className="form-control-sm"
                 >
-                  <option value="">Chọn giờ</option>
+                  <option value="">Chọn giờ chơi(*)</option>
                   {Array.from({ length: 48 }, (_, i) => {
                     const hour = String(Math.floor(i / 2)).padStart(2, '0');
                     const minute = i % 2 === 0 ? '00' : '30';
@@ -327,7 +327,7 @@ const DetailedFilterComponent = ({ setFilteredResults, allCourts }) => {
                 >
                   <option value="">Chọn loại nhóm</option>
                   <option value="Xé Vé">Xé Vé</option>
-                  <option value="Giao Lưu">Giao Lưu</option>
+                  <option value="Giao Lưu">Giao Lưu-CLB</option>
                 </Form.Control>
               </Form.Group>
             </Col>

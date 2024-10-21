@@ -215,7 +215,7 @@ const CourtDetailComponent = () => {
                 <PiUserSquareLight className="icon" style={{ color: "#828282" }} />Slot đã đặt: <span style={{ color: "red" }}>{slots - players_needed}/{slots} người</span>
               </Card.Text>
               <Card.Text>
-                <IoIosInformationCircle className="icon" style={{ color: "#828282", fontSize: "20px" }} />Ngày chơi: {date} <br />
+                <IoIosInformationCircle className="icon" style={{ color: "#828282", fontSize: "20px" }} />(Ngày chơi(*)): {date} <br />
                 <div style={{ marginLeft: '1.75rem' }}> Thời gian chơi: {time} </div>
               </Card.Text>
               <Card.Text>
