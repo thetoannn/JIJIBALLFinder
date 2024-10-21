@@ -147,7 +147,7 @@ const DetailedFilterComponent = ({ setFilteredResults, allCourts }) => {
               <Form.Group controlId="formOtherLocation">
                 <Form.Control
                   type="text"
-                  placeholder="Quận huyện (nếu cần)"
+                  placeholder="Tên quận/huyện"
                   name="otherLocation"
                   value={filters.otherLocation}
                   onChange={handleInputChange}
@@ -272,7 +272,7 @@ const DetailedFilterComponent = ({ setFilteredResults, allCourts }) => {
               <Form.Group controlId="formOtherLocation">
                 <Form.Control
                   type="text"
-                  placeholder="Quận huyện (nếu cần)"
+                  placeholder="Tên quận/huyện"
                   name="otherLocation"
                   value={filters.otherLocation}
                   onChange={handleInputChange}

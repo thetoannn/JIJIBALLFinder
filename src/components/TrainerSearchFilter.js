@@ -68,7 +68,7 @@ const TrainerSearchFilter = ({ onSearch }) => {
             <Form.Group controlId="formOtherLocation">
               <Form.Control
                 type="text"
-                placeholder="tên quận/huyện"
+                placeholder="Tên quận/huyện"
                 name="otherLocation"
                 value={filters.otherLocation}
                 onChange={handleInputChange} // Kích hoạt tìm kiếm ngay lập tức
