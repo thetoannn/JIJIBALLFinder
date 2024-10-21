@@ -68,7 +68,7 @@ const TrainerSearchFilter = ({ onSearch }) => {
             <Form.Group controlId="formOtherLocation">
               <Form.Control
                 type="text"
-                placeholder="Quận huyện (nếu có)"
+                placeholder="tên quận/huyện"
                 name="otherLocation"
                 value={filters.otherLocation}
                 onChange={handleInputChange} // Kích hoạt tìm kiếm ngay lập tức
@@ -86,8 +86,8 @@ const TrainerSearchFilter = ({ onSearch }) => {
                 className="form-control-sm"
               >
                 <option value="">Hình thức học</option>
-                <option value="kèm 1 hoặc 2">kèm 1 hoặc 2</option>
-                <option value="ghép nhóm 4-6 người">ghép nhóm 4-6 người</option>
+                <option value="dạy 1:1 trong 1 giờ">dạy 1:1 trong 1 giờ</option>
+                <option value="lớp ghép 3-4 người/2giờ">lớp ghép 3-4 người/2giờ</option>
               </Form.Select>
             </Form.Group>
           </Col>
