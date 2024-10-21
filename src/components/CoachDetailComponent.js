@@ -127,7 +127,7 @@ const CoachDetailComponent = () => {
                                     color: "#059A8F",
                                 }}
                             >
-                                {price.toLocaleString("vi-VN")} VND / buổi
+                                {price.toLocaleString("vi-VN")} VND / giờ
                             </Card.Text>
                             <Card.Text className="court-info">
                                 <div className="court-info-item">

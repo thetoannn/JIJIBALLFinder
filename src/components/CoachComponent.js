@@ -41,7 +41,7 @@ const CoachComponent = memo(({ name, price, level, phone, images, contact, addre
         <h5 className="card-title">{name}</h5>
 
         <p className="card-text" id='price-text'>
-          {price} VND/buổi
+          {price} VND/giờ
         </p>
 
         <p className="card-text level-text" style={{ marginBottom: 0, padding: 0 }}>
