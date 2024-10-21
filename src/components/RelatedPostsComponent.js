@@ -41,7 +41,7 @@ const CourtListComponent = () => {
 
   return (
     <div className="court-list-container">
-      <h2>Các bài tương tự</h2>
+      <h2>Các bài giao lưu khác</h2>
       <Row style={{ padding: "20px" }}>
         {randomCourts.map((court) => (
           <Col key={court._id} md={4} style={{ padding: 0 }}>
