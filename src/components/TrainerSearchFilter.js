@@ -87,8 +87,7 @@ const TrainerSearchFilter = ({ onSearch }) => {
               >
                 <option value="">Hình thức học</option>
                 <option value="dạy 1:1">dạy 1:1</option>
-                <option value="lớp ghép 2-4 người">lớp ghép 2-4 người</option>
-                <option value="lớp ghép 2-6 người">lớp ghép 2-6 người</option>
+                <option value="lớp ghép">lớp ghép</option>
               </Form.Select>
             </Form.Group>
           </Col>
