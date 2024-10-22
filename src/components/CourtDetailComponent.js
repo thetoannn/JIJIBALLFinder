@@ -190,7 +190,7 @@ const CourtDetailComponent = () => {
                   {type}
                 </Button>
               </div>
-              <Card.Title style={{ fontSize: "32px", fontWeight: "500", whiteSpace: "nowrap"}}>{name}</Card.Title>
+              <Card.Title style={{ fontSize: "32px", fontWeight: "500", whiteSpace: "nowrap" }}>{name}</Card.Title>
               <Card.Text className='court-info'>
                 <div className="court-info-item">
                   <CiLocationOn className="icon" style={{ color: "#828282" }} />
@@ -198,7 +198,7 @@ const CourtDetailComponent = () => {
                     href={courtLocation}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ textDecoration: "none", color: "#064D7E"}}
+                    style={{ textDecoration: "none", color: "#064D7E" }}
                   >
                     {name}
                   </a>
@@ -269,7 +269,7 @@ const CourtDetailComponent = () => {
         <Row>
           <Col className='court-description' style={{ textAlign: "left" }}>
             <h5 className='des-text-1' style={{ color: "#059A8F" }}>Lưu ý</h5>
-            <h5 className='des-text-2' style={{ color: "#059A8F" }}>Mô tả</h5>
+            <h5 className='des-text-2' style={{ color: "#059A8F" }}>Lưu ý</h5>
             <div
               style={{
                 width: "60px",
@@ -280,7 +280,7 @@ const CourtDetailComponent = () => {
               }}
             />
             <br />
-            <p className='des-text-1'>
+            <p className='des-text-1 '>
               1. Để xây dựng một cộng đồng Pickleball lớn mạnh, mọi người hãy có trách nhiệm với mỗi bài đăng ký giao lưu của mình. <br />
               2. "Xé vé" là hình thức thu tiền trọn gói cho cả buổi chơi (thường từ
               2-3 giờ) bao gồm: sân + bóng + nước uống (ở hầu hết các sân). <br />
@@ -291,21 +291,16 @@ const CourtDetailComponent = () => {
               5. Chúng tôi hoàn toàn không thu bất kì phí nào của người chơi,
               vui lòng thanh toán trực tiếp sau khi hoàn thành trận đấu ở sân.
             </p>
-            <p className='des-text-2'>Sân Pickleball có hình chữ nhật với kích thước nhỏ hơn sân tennis, được chia làm hai nửa bởi một lưới ở giữa. Sân thường có các đặc điểm sau: <br />
-              <ol>
-                <li>Kích thước: Sân có chiều dài 13,41 mét (44 feet) và chiều rộng 6,1 mét (20 feet). Mỗi bên sân có chiều dài 6,71 mét (22 feet).</li>
-                <li>Lưới: Lưới cao 91,4 cm (36 inch) ở hai đầu và cao 86,4 cm (34 inch) ở giữa. Lưới được căng ngang giữa sân, chia sân thành hai phần bằng nhau.</li>
-                <li>Khu vực:
-                  <ul>
-                    <li>
-                      Khu vực không vô lê: Gần lưới, có chiều dài 2,13 mét (7 feet) tính từ lưới về mỗi bên sân, được gọi là khu vực "kitchen" hoặc "no-volley zone". Trong khu vực này, người chơi không được thực hiện các cú vô lê (đánh bóng mà không cho bóng chạm đất trước).
-                    </li>
-                    <li>
-                      Phần sân còn lại: Được chia thành hai phần chính, tương ứng với phần sân phải và phần sân trái, nơi người chơi có thể giao bóng và đánh trả.
-                    </li>
-                  </ul>
-                </li>
-              </ol>
+            <p className='des-text-2 '>
+              1. Để xây dựng một cộng đồng Pickleball lớn mạnh, mọi người hãy có trách nhiệm với mỗi bài đăng ký giao lưu của mình. <br />
+              2. "Xé vé" là hình thức thu tiền trọn gói cho cả buổi chơi (thường từ
+              2-3 giờ) bao gồm: sân + bóng + nước uống (ở hầu hết các sân). <br />
+              3. Hình thức xé vé rất phù hợp với những người có công việc bận rộn
+              không có nhóm chơi cố định hoặc có thời gian rảnh mà không kiếm
+              được đồng đội chơi cùng. <br />
+              4. Giao lưu-CLB là hình thức do các clb pickleball tổ tuyển giao lưu vãng lai, có thể xin vào clb để chơi cố định nếu thiếu thành viên và phù hợp các tiêu chí <br />
+              5. Chúng tôi hoàn toàn không thu bất kì phí nào của người chơi,
+              vui lòng thanh toán trực tiếp sau khi hoàn thành trận đấu ở sân.
             </p>
           </Col>
         </Row>
