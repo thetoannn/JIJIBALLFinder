@@ -21,9 +21,9 @@ const TrainerSearchFilter = ({ onSearch }) => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    
+
     // Chuyển đổi giá trị nhập vào thành chữ thường
-    const normalizedValue = capitalizeFirstLetter(value);
+    const normalizedValue = name === "location" || name === "otherLocation" ? capitalizeFirstLetter(value) : value;
 
     if (name === 'location' && normalizedValue === 'other') {
       setShowOther(true); // Hiển thị trường Other nếu chọn "Other"
@@ -31,7 +31,7 @@ const TrainerSearchFilter = ({ onSearch }) => {
       setShowOther(false); // Ẩn trường Other nếu chọn khác
       setFilters({ ...filters, otherLocation: '' }); // Xoá giá trị Other khi chọn khác
     }
-    
+
     // Cập nhật giá trị bộ lọc và kích hoạt tìm kiếm
     const updatedFilters = { ...filters, [name]: normalizedValue }; // Sử dụng normalizedValue
     setFilters(updatedFilters);
@@ -79,7 +79,8 @@ const TrainerSearchFilter = ({ onSearch }) => {
 
           <Col xs="auto" className="me-1">
             <Form.Group controlId="formTypeTrain">
-              <Form.Select
+              <Form.Control
+                as="select"
                 name="typeTrain"
                 value={filters.typeTrain}
                 onChange={handleInputChange}
@@ -88,7 +89,7 @@ const TrainerSearchFilter = ({ onSearch }) => {
                 <option value="">Hình thức học</option>
                 <option value="kèm 1 hoặc 2">kèm 1 hoặc 2</option>
                 <option value="ghép nhóm 4-6 người">ghép nhóm 4-6 người</option>
-              </Form.Select>
+              </Form.Control>
             </Form.Group>
           </Col>
 

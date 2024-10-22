@@ -160,8 +160,8 @@ const CoachDetailComponent = () => {
                                     'Không có Số điện thoại'
                                 )}
                                 &nbsp;&nbsp;
-                                {contact?.facebook !== 'Không có Facebook' ? ( 
-                                    <a 
+                                {contact?.facebook !== 'Không có Facebook' ? (
+                                    <a
                                         href={contact?.facebook}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -185,7 +185,7 @@ const CoachDetailComponent = () => {
                             Lưu ý
                         </h5>
                         <h5 className="des-text-2" style={{ color: "#059A8F" }}>
-                            Mô tả
+                            Lưu ý
                         </h5>
                         <div
                             style={{
@@ -209,38 +209,15 @@ const CoachDetailComponent = () => {
                             4. Đảm bảo rằng HLV có chuyên môn giảng dạy.
                         </p>
                         <p className="des-text-2">
-                            Sân Pickleball có hình chữ nhật với kích thước nhỏ hơn sân tennis,
-                            được chia làm hai nửa bởi một lưới ở giữa. Sân thường có các đặc
-                            điểm sau: <br />
-                            <ol>
-                                <li>
-                                    Kích thước: Sân có chiều dài 13,41 mét (44 feet) và chiều rộng
-                                    6,1 mét (20 feet). Mỗi bên sân có chiều dài 6,71 mét (22
-                                    feet).
-                                </li>
-                                <li>
-                                    Lưới: Lưới cao 91,4 cm (36 inch) ở hai đầu và cao 86,4 cm (34
-                                    inch) ở giữa. Lưới được căng ngang giữa sân, chia sân thành
-                                    hai phần bằng nhau.
-                                </li>
-                                <li>
-                                    Khu vực:
-                                    <ul>
-                                        <li>
-                                            Khu vực không vô lê: Gần lưới, có chiều dài 2,13 mét (7
-                                            feet) tính từ lưới về mỗi bên sân, được gọi là khu vực
-                                            "kitchen" hoặc "no-volley zone". Trong khu vực này, người
-                                            chơi không được thực hiện các cú vô lê (đánh bóng mà không
-                                            cho bóng chạm đất trước).
-                                        </li>
-                                        <li>
-                                            Phần sân còn lại: Được chia thành hai phần chính, tương
-                                            ứng với phần sân phải và phần sân trái, nơi người chơi có
-                                            thể giao bóng và đánh trả.
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ol>
+                            1. Giá trên là giá ghép chung giữa các bạn học viên khoảng 6
+                            người/lớp, đã bao gồm toàn bộ chi phí sân và bóng tập. <br />
+                            2. Xác minh thông tin HLV: Chúng tôi cung cấp đầy đủ thông tin về
+                            trình độ, địa điểm, thành tích, giá tiền của các HLV. Tất cả đều
+                            được xác thực. <br />
+                            3. Mọi người có thể liên hệ HLV thông qua SĐT và FACEBOOK của họ,
+                            trang Web chỉ cung cấp những thông tin uy tín và được kiểm duyệt
+                            không hỗ trợ liên hệ. <br />
+                            4. Đảm bảo rằng HLV có chuyên môn giảng dạy.
                         </p>
                     </Col>
                 </Row>
