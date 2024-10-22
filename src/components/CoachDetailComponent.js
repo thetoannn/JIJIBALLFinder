@@ -127,7 +127,7 @@ const CoachDetailComponent = () => {
                                     color: "#059A8F",
                                 }}
                             >
-                                {price.toLocaleString("vi-VN")} VND / người
+                                {price.toLocaleString("vi-VN")} VND
                             </Card.Text>
                             <Card.Text className="court-info">
                                 <div className="court-info-item">
@@ -198,15 +198,10 @@ const CoachDetailComponent = () => {
                         />
                         <br />
                         <p className="des-text-1">
-                            1. Giá trên là giá ghép chung giữa các bạn học viên khoảng 6
-                            người/lớp, đã bao gồm toàn bộ chi phí sân và bóng tập. <br />
-                            2. Xác minh thông tin HLV: Chúng tôi cung cấp đầy đủ thông tin về
-                            trình độ, địa điểm, thành tích, giá tiền của các HLV. Tất cả đều
-                            được xác thực. <br />
-                            3. Mọi người có thể liên hệ HLV thông qua SĐT và FACEBOOK của họ,
-                            trang Web chỉ cung cấp những thông tin uy tín và được kiểm duyệt
-                            không hỗ trợ liên hệ. <br />
-                            4. Đảm bảo rằng HLV có chuyên môn giảng dạy.
+                            1. Giá của 2 hình thức học trên chưa bao gồm tiền sân, để biết thêm thông tin hãy liên hệ trực tiếp với HLV. <br />
+                            2. Mọi người liên hệ với HLV thông qua SĐT và FACEBOOK của họ, trang Web chỉ cung cấp những thông tin uy tín và được kiểm duyệt, chưa hỗ trợ liên hệ. <br />
+                            3. Xác minh thông tin HLV: Chúng tôi đã xin phép được cung cấp đầy đủ thông tin về địa điểm, thành tích, giá tiền của các HLV, đảm bảo những thông tin đã được kiểm duyệt. <br />
+                            4. Chúc mọi người có một buổi tập thành công.
                         </p>
                         <p className="des-text-2">
                             1. Giá trên là giá ghép chung giữa các bạn học viên khoảng 6

@@ -23,7 +23,7 @@ const ParticipationComponent = () => {
               <FaMapMarkerAlt className="icon" />
               <div>
                 <h5>Chọn sân nhanh chóng</h5>
-                <p>Thông qua các buổi giao lưu, các bạn sẽ đăng ký sân Pickleball phù hợp nhất với vị trí của mình.</p>
+                <p>Thông qua lựa chọn bộ lọc, các bạn sẽ đăng ký sân Pickleball phù hợp nhất với từng cá nhân.</p>
               </div>
             </div>
             <div className="feature-item">

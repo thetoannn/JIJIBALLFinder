@@ -281,17 +281,15 @@ const CourtDetailComponent = () => {
             />
             <br />
             <p className='des-text-1'>
-              1. "Xé vé" là hình thức thu tiền trọn gói cho cả buổi chơi (thường
-              2-3 giờ) bao gồm: sân + bóng + nước uống (Aqua/Dasani). <br />
-              2. Hình thức này rất phù hợp với những người có công việc bận rộn
+              1. Để xây dựng một cộng đồng Pickleball lớn mạnh, mọi người hãy có trách nhiệm với mỗi bài đăng ký giao lưu của mình. <br />
+              2. "Xé vé" là hình thức thu tiền trọn gói cho cả buổi chơi (thường từ
+              2-3 giờ) bao gồm: sân + bóng + nước uống (ở hầu hết các sân). <br />
+              3. Hình thức xé vé rất phù hợp với những người có công việc bận rộn
               không có nhóm chơi cố định hoặc có thời gian rảnh mà không kiếm
               được đồng đội chơi cùng. <br />
-              3. Sau khi đăng ký giao lưu thành công, mọi người thể kiểm tra lại
-              thông qua chức năng sân đã đăng ký. <br />
-              4. Mọi người hoàn toàn có thể hủy sân sau khi đặt nếu có việc đột
-              suất. <br />
+              4. Giao lưu-CLB là hình thức do các clb pickleball tổ tuyển giao lưu vãng lai, có thể xin vào clb để chơi cố định nếu thiếu thành viên và phù hợp các tiêu chí <br />
               5. Chúng tôi hoàn toàn không thu bất kì phí nào của người chơi,
-              vui lòng thanh toán trực tiếp với chủ sân.
+              vui lòng thanh toán trực tiếp sau khi hoàn thành trận đấu ở sân.
             </p>
             <p className='des-text-2'>Sân Pickleball có hình chữ nhật với kích thước nhỏ hơn sân tennis, được chia làm hai nửa bởi một lưới ở giữa. Sân thường có các đặc điểm sau: <br />
               <ol>
