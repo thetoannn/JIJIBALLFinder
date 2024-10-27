@@ -44,16 +44,16 @@ const Register = () => {
     }
 
     // Kiểm tra tính hợp lệ của mật khẩu (ví dụ: độ dài tối thiểu là 6)
-    if (password.length < 6) {
-      toast.error("Mật khẩu phải có ít nhất 6 ký tự.");
-      return;
-    }
+    // if (password.length < 6) {
+    //   toast.error("Mật khẩu phải có ít nhất 6 ký tự.");
+    //   return;
+    // }
 
-    // Kiểm tra xác nhận mật khẩu
-    if (password !== confirmPassword) {
-      toast.error("Mật khẩu xác nhận không khớp.");
-      return;
-    }
+    // // Kiểm tra xác nhận mật khẩu
+    // if (password !== confirmPassword) {
+    //   toast.error("Mật khẩu xác nhận không khớp.");
+    //   return;
+    // }
 
     try {
       const response = await fetch("https://bepickleball.vercel.app/api/auth/register", {
@@ -71,6 +71,14 @@ const Register = () => {
 
       const data = await response.json();
 
+      if (response.ok) {
+        if (window.confirm(data.message || 'Đã gửi mật khẩu vào email của bạn, vui lòng kiểm tra email.')) {
+          navigate('/change-password');  // Chuyển đến trang đổi mật khẩu
+        }
+      } else {
+        toast.error(data.error || "Đã xảy ra lỗi, vui lòng thử lại sau!");
+      }
+
       if (!response.ok) {
         toast.error(data.error || "Đã xảy ra lỗi, vui lòng thử lại sau!");
         return;
@@ -79,7 +87,7 @@ const Register = () => {
       console.log(data);
       toast.success("Đăng ký thành công!");
       
-      navigate('/login');
+      // navigate('/login');
     } catch (error) {
       console.log("Error: ", error);
       toast.error("Đã xảy ra lỗi, vui lòng thử lại sau!");
@@ -151,7 +159,7 @@ const Register = () => {
                   onChange={handleChange}
                   value={formData.phone} />
               </div>
-              <div className="input-group">
+              {/* <div className="input-group">
                 <div className="icon-wrapper">
                   <FaLock />
                 </div>
@@ -176,7 +184,7 @@ const Register = () => {
                   id='confirmPassword'
                   onChange={handleChange}
                   value={formData.confirmPassword} />
-              </div>
+              </div> */}
               <button type='submit' className="button">Đăng ký</button>
               <p className="link-wrapper">
                 Đã có tài khoản? <a href="/login" className="link d-inline">Đăng nhập</a>
